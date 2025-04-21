@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.font {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-2 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+    outline: solid black 1px;
+}
+
+.main-menu {
+    padding-left: 5px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.main-menu img {
+    width: 75px;
+}
+
+#search {
+    overflow: hidden;
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+}
+
+#search-button {
+    height: 50px;
+    font-size: 16px;
+}
+
+#header-wrap {
+    width: 100%;
+    height: 143px;
+}
+
+#alert {
+    padding: 20px 20px 20px 30px;
+    background-color: #b2e990;
+    color: black;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: red;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer > p {
+    text-align: center;
+}
+
+#footer-wrap {
+    flex: 1;
+    align-self: flex-end;
+}

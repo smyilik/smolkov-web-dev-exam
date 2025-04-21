@@ -1,0 +1,133 @@
+.products {
+    padding: 0 20px 0 15px;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+main > h2 {
+    padding: 0 20px 0 15px;
+}
+
+.products-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-top > h2 {
+    font-weight: bold;
+}
+
+.products-top select {
+    font-size: 16px;
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.product-card {
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    height: 750px;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 35px;
+    outline: solid black 2px;
+}
+
+.product-card:hover {
+    outline: solid red 2px;
+}
+
+.img-figure {
+    max-height: 50%;
+}
+
+.img-figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.order-left, .order-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-div {
+    margin: 10px;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-buttons button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.order-buttons button:hover {
+    background-color: gray;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .products-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    #header-wrap {
+        height: 209.5px;
+    }
+
+    .products-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-menu {
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .main-menu img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    #header-wrap {
+        height: 259.5px;
+    }
+}

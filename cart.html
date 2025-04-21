@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pawn-online.com - Cart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/styleCart.css">
+    </head>
+    <body>
+        <header>
+            <div class="main-menu font-2">
+                <a href="./index.html"><img class="company-logo" src="images/company_logo.png" alt="company-logo"></a>
+                <div class="right-buttons">
+                    <a href="./index.html"><img src="images/list.png" alt="main-paige"></a>
+                    <a href="./profile.html"><img src="images/profile.png" alt="profile"></a>
+                </div>
+            </div>
+            <div class="font" id="alert">
+                <div class="notification">
+                    <span class="closebtn" onclick="closeAlert()">&times;</span>
+                    Alert!
+                </div>
+            </div>
+        </header>
+        <div id="header-wrap"></div>
+        <main>
+            <div class="products">
+                <h2 class="font-2">Корзина</h2>
+                <div class="products-list"></div>
+            </div>
+            <h2 class="font-2">Оформление заказа</h2>
+            <form class="order" id="form">
+                <fieldset class="order-left">
+                    <div class="order-div vertical">
+                        <label class="font-2" for="full_name">Имя</label>
+                        <input class="font-2" type="text" name="full_name" id="full_name" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="order-div vertical">    
+                        <label class="font-2" for="phone">Номер телефона</label>
+                        <input class="font-2" type="tel" name="phone" id="phone" placeholder="+74951234567" required>
+                    </div>
+                    <div class="order-div vertical">
+                        <label class="font-2" for="email">Email</label>
+                        <input class="font-2" type="email" name="email" id="email" placeholder="example@mail.com" required>
+                        <div>
+                            <input class="font-2" type="checkbox" name="subscribe" id="subscribe" checked>
+                            <label class="font-2" for="subscribe">Подписаться на рассылку</label>
+                        </div>
+                    </div>
+                    <div class="order-div vertical">
+                        <label class="font-2" for="comment">Комментарий</label>
+                        <input class="font-2" type="text" name="comment" id="comment">
+                    </div>
+                </fieldset>
+                <fieldset class="order-right">
+                    <div class="order-div vertical">
+
+                        <label class="font-2" for="delivery_address">Адрес доставки</label>
+                        <input class="font-2" type="text" name="delivery_address" id="delivery_address" placeholder="ул. Большая Семёновская, 38" required>
+                    </div>
+                    <div class="order-div vertical">
+
+                        <label class="font-2" for="delivery_date">Дата доставки</label>
+                        <input class="font-2" type="date" name="delivery_date" id="delivery_date" placeholder="21.04.2025" required>
+                    </div>
+                    <div class="order-div vertical">
+
+                        <label class="font-2" for="delivery_interval">Время доставки</label>
+                        <select name="delivery_interval" name="time" id="delivery_interval">
+                            <option value="08:00-12:00">08:00-12:00</option>
+                            <option value="12:00-14:00">12:00-14:00</option>
+                            <option value="14:00-18:00">14:00-18:00</option>
+                            <option value="18:00-22:00">18:00-22:00</option>
+                        </select>
+                    </div>
+                    <div class="order-div order-cost font-2">
+                        <h2 id="total-price">Итоговая стоимость: 0₽</h2>
+                        <p>(Стоимость доставки 500₽)</p>
+                    </div>
+                    <div class="order-div order-buttons">
+                        <button id="reset" type="reset" class="font-2">Сбросить</button>
+                        <button id="submit" type="submit" class="font-2">Оформить</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </main>
+        <div id="footer-wrap"></div>
+        <footer>
+            <div class="footer font-2">
+                <p>&#169; 2025 Pawn-online</p>
+            </div>
+        </footer>
+        <script src="./scripts/cart.js"></script>
+    </body>
+</html>
